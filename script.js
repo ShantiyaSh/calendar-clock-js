@@ -47,5 +47,8 @@ window.onload = () => {
         icon.setAttribute("src", "img/night.svg");
         icon.setAttribute("alt", "night");
       }
-    });
+    })
+    .catch((e) => {
+        console.warn(e)
+    })
 };
