@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Archivo-SemiBold";
+  font-style: normal;
+  src: url("fonts/Archivo-SemiBold.woff") format("woff");
+}
+
+body{
+    font-family: "Archivo-SemiBold" , sans-serif;
+    color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+}
+.main {
+  width: 800px;
+  height: 600px;
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.calender {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.calender-item{
+    margin: 25px 0 25px 0;
+ 
+}
+.--year {
+  font-size: 5rem;
+}
+.--month {
+  font-size: 3rem;
+}
+.--day {
+  font-size: 4rem;
+}
+.clock{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.clock-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
+.weather{
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 10%;
+    border-radius: 0 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city{
+    font-size: 2rem;
+}
+.temp{
+    margin: 0 10px 0 10px;
+    font-size: 2rem;
+}
+.icon{
+    height: 80%;
+}
+
+
+@media (max-width: 768px) {
+    .main{
+        width: 95%;
+        flex-direction: column;
+    }
+    .calender{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .calender-item{
+        margin: 10px 0 10px 0;
+    }
+    .clock{
+        width: 100%;
+    }
+    .weather{
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+}
