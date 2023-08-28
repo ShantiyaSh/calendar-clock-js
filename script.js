@@ -27,7 +27,7 @@ setInterval(() => {
   sec.innerHTML = now.getSeconds();
   min.innerHTML = now.getMinutes();
   hour.innerHTML = now.getHours();
-  day.innerHTML = now.getDay();
+  day.innerHTML = now.getDate();
   month.innerHTML = monthNames[now.getMonth()];
   year.innerHTML = now.getFullYear();
 }, 1000);
